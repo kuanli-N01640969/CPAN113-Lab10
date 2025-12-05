@@ -26,3 +26,6 @@ class PerishableProduct extends ProductProperties {
         return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantitiy: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
+//2 Instances Creations
+const perish1 = new PerishableProduct("Steak", 21.99, 3, "2025-12-10");
+const perish2 = new PerishableProduct("Butter", 7.99, 2, "2025-12-28");
