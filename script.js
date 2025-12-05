@@ -1,17 +1,17 @@
 //===Part 1 Class Setup===
 class ProductProperties{
     //Initialize Properties
-    constructor (name, price, quantity){
+    constructor(name, price, quantity){
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
     //Total value method
-    getTotalValue (){
+    getTotalValue(){
         return this.price * this.quantity;
     }
     //Product representation method
-    toString (){
+    toString(){
         return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantitiy: ${this.quantity}`;
     }
 }
@@ -21,5 +21,8 @@ class PerishableProduct extends ProductProperties {
         //calls parent properties
         super(name, price, quantity);
         this.expirationDate = expirationDate;
+    }
+    toString(){
+        return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantitiy: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
