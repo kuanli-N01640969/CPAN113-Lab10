@@ -9,4 +9,8 @@ class ProductProperties{
     getTotalValue (){
         return this.price * this.quantity;
     }
+    //Product representation method
+    toString (){
+        return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantitiy: ${this.quantity}`;
+    }
 }
