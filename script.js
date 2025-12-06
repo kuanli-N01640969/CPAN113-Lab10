@@ -64,3 +64,9 @@ const product4 = new PerishableProduct("Steak", 24.99, 4, "2025-12-13");
 const product5 = new PerishableProduct("Butter", 8.99, 2, "2025-12-31");
 //Create Store Instance
 const TheStore = new Store();
+//Add 5 products into inventory
+TheStore.addProduct(product1);
+TheStore.addProduct(product2);
+TheStore.addProduct(product3);
+TheStore.addProduct(product4);
+TheStore.addProduct(product5);
