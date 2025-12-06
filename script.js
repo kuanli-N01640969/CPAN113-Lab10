@@ -16,6 +16,7 @@ class ProductProperties{
     }
     //===Part 3 Static Methods and Properties===
     static applyDiscount (products, discount){
+        //forEach loops through all products within the array
         products.forEach(products=>{
             product.price = product.price * (1-discount);
         });
@@ -35,3 +36,6 @@ class PerishableProduct extends ProductProperties {
 //2 Instances Creations
 const perish1 = new PerishableProduct("Steak", 21.99, 3, "2025-12-10");
 const perish2 = new PerishableProduct("Butter", 7.99, 2, "2025-12-28");
+class Store{
+    
+}
