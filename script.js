@@ -36,6 +36,9 @@ class PerishableProduct extends ProductProperties {
 //2 Instances Creations
 const perish1 = new PerishableProduct("Steak", 21.99, 3, "2025-12-10");
 const perish2 = new PerishableProduct("Butter", 7.99, 2, "2025-12-28");
+//===Part 4 Store Management===
 class Store{
-    
+    constructor(){
+        this.inventory = [];
+    }
 }
