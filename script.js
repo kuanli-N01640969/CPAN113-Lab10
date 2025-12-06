@@ -45,6 +45,15 @@ class Store{
     addProduct(product){
         this.inventory.push(product);
     }
+    //Inventory total value
+    getInventoryValue(){
+        let total = 0;
+        //Loop through the array using totalvalue method to calculate price and quantity of products
+        this.inventory.forEach(product=>{
+            total += product.getTotalValue();
+        });
+        return total;
+    }
     //Find product by name
     findProductByName(name){
         for (const product of this.inventory){
