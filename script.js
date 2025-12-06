@@ -62,3 +62,5 @@ const product2 = new ProductProperties("Tea", 4.99, 3);
 const product3 = new ProductProperties("Sugar", 3.99, 1);
 const product4 = new PerishableProduct("Steak", 24.99, 4, "2025-12-13");
 const product5 = new PerishableProduct("Butter", 8.99, 2, "2025-12-31");
+//Create Store Instance
+const TheStore = new Store();
