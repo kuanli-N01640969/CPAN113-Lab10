@@ -17,7 +17,7 @@ class ProductProperties{
     //===Part 3 Static Methods and Properties===
     static applyDiscount (products, discount){
         //forEach loops through all products within the array
-        products.forEach(products=>{
+        products.forEach(product=>{
             product.price = product.price * (1-discount);
         });
     }
@@ -82,3 +82,7 @@ TheStore.addProduct(product5);
 //Inventory total value before discount
 let InventoryTotal = TheStore.getInventoryValue();
 console.log(`The inventory total before discount is: $${InventoryTotal.toFixed(2)}`);
+//Discounted inventory total value
+PerishableProduct.applyDiscount(TheStore.inventory, 0.15);
+let DiscountedInventory = TheStore.getInventoryValue();
+console.log(`The discounted inventory total is: $${DiscountedInventory.toFixed(2)}`);
