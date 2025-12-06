@@ -14,6 +14,10 @@ class ProductProperties{
     toString(){
         return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantitiy: ${this.quantity}`;
     }
+    //===Part 3 Static Methods and Properties===
+    static applyDiscount (products, discount){
+
+    }
 }
 //===Part 2 Inheritance===
 class PerishableProduct extends ProductProperties {
