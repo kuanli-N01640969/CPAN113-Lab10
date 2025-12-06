@@ -79,3 +79,6 @@ TheStore.addProduct(product2);
 TheStore.addProduct(product3);
 TheStore.addProduct(product4);
 TheStore.addProduct(product5);
+//Inventory total value before discount
+let InventoryTotal = TheStore.getInventoryValue();
+console.log(`The inventory total before discount is: $${InventoryTotal.toFixed(2)}`);
