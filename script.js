@@ -16,7 +16,9 @@ class ProductProperties{
     }
     //===Part 3 Static Methods and Properties===
     static applyDiscount (products, discount){
-
+        products.forEach(products=>{
+            product.price = product.price * (1-discount);
+        });
     }
 }
 //===Part 2 Inheritance===
