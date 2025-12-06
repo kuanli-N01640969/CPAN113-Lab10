@@ -33,7 +33,7 @@ class PerishableProduct extends ProductProperties {
         return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantitiy: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
-//2 Instances Creations
+//===2 Instances Creations===
 const perish1 = new PerishableProduct("Steak", 21.99, 3, "2025-12-10");
 const perish2 = new PerishableProduct("Butter", 7.99, 2, "2025-12-28");
 //===Part 4 Store Management===
@@ -55,3 +55,10 @@ class Store{
         return null;
     }
 }
+//===Part 5 Testing===
+//Product Creation
+const product1 = new ProductProperties("Coffee", 8.99, 5);
+const product2 = new ProductProperties("Tea", 4.99, 3);
+const product3 = new ProductProperties("Sugar", 3.99, 1);
+const product4 = new PerishableProduct("Steak", 24.99, 4, "2025-12-13");
+const product5 = new PerishableProduct("Butter", 8.99, 2, "2025-12-31");
