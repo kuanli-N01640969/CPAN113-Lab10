@@ -86,3 +86,8 @@ console.log(`The inventory total before discount is: $${InventoryTotal.toFixed(2
 PerishableProduct.applyDiscount(TheStore.inventory, 0.15);
 let DiscountedInventory = TheStore.getInventoryValue();
 console.log(`The discounted inventory total is: $${DiscountedInventory.toFixed(2)}`);
+//Find product by name (1 valid and 1 null)
+let test1 = TheStore.findProductByName("Coffee");
+let test2 = TheStore.findProductByName("Steak");
+console.log(`The product detail of your search is: ${test1.toString()}`);
+console.log(`The product detail of your search is: ${test2.toString()}`);
