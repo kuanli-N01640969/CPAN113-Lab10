@@ -41,7 +41,17 @@ class Store{
     constructor(){
         this.inventory = [];
     }
+    //Adding products to inventory array
     addProduct(product){
         this.inventory.push(product);
+    }
+    //Find product by name
+    findProductByName(name){
+        for (const product of this.inventory){
+            if (product.name === name){
+                return product;
+            }
+        }
+        return null;
     }
 }
